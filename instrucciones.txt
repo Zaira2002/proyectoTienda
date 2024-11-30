@@ -1,0 +1,17 @@
+HOLA SOY MIKE 
+ESTAS SON LAS INSTRUCCIONES
+
+Requisitos:
+- tener instalado xampp
+
+pasos:
+
+- ejecutar xampp
+- iniciar los servicios apache y mysql
+- abrir la url: http://localhost/phpmyadmin/index.php?lang=es
+- crear la base de datoscon el nombre de Tienda
+- copiar las sentecias sql y ejecutarlas
+- probar si se obtiene los datos colocando en el navegador 
+  la siguiente url: http://localhost/proyectoTienda/php/api/tipo.php
+
+-- futuras instrucciones XD
