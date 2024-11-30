@@ -14,4 +14,12 @@ pasos:
 - probar si se obtiene los datos colocando en el navegador 
   la siguiente url: http://localhost/proyectoTienda/php/api/tipo.php
 
--- futuras instrucciones XD
+-- obtener el repositorio de github
+
+- extensiones de visual studio code : git graph
+- abrir una nueva ventana de visual studio y en el panel central buscar la opcion que dice:
+ clone git repository
+- usar el siguiente link para clonar: https://github.com/MIKKEL007/proyectoTienda
+- ya em visual studio hay que irse al apartado de source control y darla a la opcion del boton desplegable que dice
+ : commit & snyc
+
