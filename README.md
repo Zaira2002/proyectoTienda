@@ -23,3 +23,11 @@ pasos:
 - ya em visual studio hay que irse al apartado de source control y darla a la opcion del boton desplegable que dice
  : commit & snyc
 
+NOTAS DEL 7/12/2024:
+- se agrego una primera propuesta de plantilla en la cual se modifico las paginas de :
+  - pagina de inventory: se le agrego dinanimos a la tabla y se puede eliminar productos
+  - la pagina de home: se le hizo dinamica la toma de los totales de usuarios, productos, categorias y ventas
+- se creo dashboard.php para la consultas de home.html
+- se crearon los .js para inventory y home
+
+

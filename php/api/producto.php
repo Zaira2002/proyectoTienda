@@ -6,12 +6,28 @@ $method = $_SERVER['REQUEST_METHOD'];
 
 switch ($method) {
     case 'GET':
+        // if (isset($_GET['id'])) {
+        //     $stmt = $pdo->prepare("SELECT * FROM producto WHERE id = ?");
+        //     $stmt->execute([$_GET['id']]);
+        //     $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        // } else {
+        //     $stmt = $pdo->query("SELECT * FROM producto");
+        //     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        // }
+        // echo json_encode($result);
+        // break;
+
         if (isset($_GET['id'])) {
-            $stmt = $pdo->prepare("SELECT * FROM producto WHERE id = ?");
+            $stmt = $pdo->prepare("SELECT p.*, t.nombreTipo AS tipoNombre 
+                                   FROM producto p 
+                                   JOIN tipo t ON p.idTipo = t.id 
+                                   WHERE p.id = ?");
             $stmt->execute([$_GET['id']]);
             $result = $stmt->fetch(PDO::FETCH_ASSOC);
         } else {
-            $stmt = $pdo->query("SELECT * FROM producto");
+            $stmt = $pdo->query("SELECT p.*, t.nombreTipo AS tipoNombre 
+                                 FROM producto p 
+                                 JOIN tipo t ON p.idTipo = t.id");
             $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
         }
         echo json_encode($result);

@@ -20,6 +20,7 @@
 	<script src="js/sweetalert2.min.js" ></script>
 	<script src="js/jquery.mCustomScrollbar.concat.min.js" ></script>
 	<script src="js/main.js" ></script>
+
 </head>
 <body>
 	<!-- Notifications area -->
@@ -307,83 +308,50 @@
 		</div>
 		<section class="full-width header-well">
 			<div class="full-width header-well-icon">
-				<i class="zmdi zmdi-store"></i>
+				<i class="zmdi zmdi-store"></i> <!-- LOGO DE MIMI INVENTARIO  -->
 			</div>
 			<div class="full-width header-well-text">
 				<p class="text-condensedLight">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde aut nulla accusantium minus corporis accusamus fuga harum natus molestias necessitatibus.
+					INFORMACION PARA EL INVENTARIO <!-- INFORMACION DE LA PARTE SUPERIOR  -->
 				</p>
 			</div>
 		</section>
 		<div class="full-width divider-menu-h"></div>
 		<div class="mdl-grid">
 			<div class="mdl-cell mdl-cell--4-col-phone mdl-cell--8-col-tablet mdl-cell--12-col-desktop">
-				<div class="table-responsive">
-					<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp full-width table-responsive">
+				<div class="table-responsive"> 
+					<!-- TABLA DE INVENTARIO -->
+					<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp full-width table-responsive" id="bodyTable">
 						<thead>
+							<!-- ENCABEZADO -->
 							<tr>
-								<th class="mdl-data-table__cell--non-numeric">Name</th>
-								<th>Code</th>
-								<th>Stock</th>
-								<th>Price</th>
-								<th>Options</th>
+								<th class="mdl-data-table__cell--non-numeric">NOMBRE</th>
+								<th>ID</th>
+								<th>DESCRIPCION</th>
+								<th>TIPO</th>
+								<th>CANTIDAD</th>
+								<th>PRECIO</th>
+								<th>OPCIONES</th>
 							</tr>
 						</thead>
-						<tbody>
-							<tr>
-								<td class="mdl-data-table__cell--non-numeric">Product Name</td>
-								<td>Product Code</td>
-								<td>7</td>
-								<td>$77</td>
+						<!-- CUERPO DINAMICO -- EJEMPLO -->
+						<tbody >
+							<!-- <tr>
+								<td class="mdl-data-table__cell--non-numeric">SOPA INSTANTANEA</td>
+								<td>1</td>
+								<td>SOPA MAGGY DE POLLO</td>
+								<td>SOPAS</td>
+								<td>10</td>
+								<td>$ 1.50</td>
 								<td><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"><i class="zmdi zmdi-more"></i></button></td>
-							</tr>
-							<tr>
-								<td class="mdl-data-table__cell--non-numeric">Product Name</td>
-								<td>Product Code</td>
-								<td>7</td>
-								<td>$77</td>
-								<td><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"><i class="zmdi zmdi-more"></i></button></td>
-							</tr>
-							<tr>
-								<td class="mdl-data-table__cell--non-numeric">Product Name</td>
-								<td>Product Code</td>
-								<td>7</td>
-								<td>$77</td>
-								<td><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"><i class="zmdi zmdi-more"></i></button></td>
-							</tr>
-							<tr>
-								<td class="mdl-data-table__cell--non-numeric">Product Name</td>
-								<td>Product Code</td>
-								<td>7</td>
-								<td>$77</td>
-								<td><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"><i class="zmdi zmdi-more"></i></button></td>
-							</tr>
-							<tr>
-								<td class="mdl-data-table__cell--non-numeric">Product Name</td>
-								<td>Product Code</td>
-								<td>7</td>
-								<td>$77</td>
-								<td><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"><i class="zmdi zmdi-more"></i></button></td>
-							</tr>
-							<tr>
-								<td class="mdl-data-table__cell--non-numeric">Product Name</td>
-								<td>Product Code</td>
-								<td>7</td>
-								<td>$77</td>
-								<td><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"><i class="zmdi zmdi-more"></i></button></td>
-							</tr>
-							<tr>
-								<td class="mdl-data-table__cell--non-numeric">Product Name</td>
-								<td>Product Code</td>
-								<td>7</td>
-								<td>$77</td>
-								<td><button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect"><i class="zmdi zmdi-more"></i></button></td>
-							</tr>
+							</tr> -->
+							
 						</tbody>
 					</table>
 				</div>
 			</div>
 		</div>
 	</section>
+	<script src="js//customjs/inventory.js" ></script><!-- mi script para cargar la tabla dinamicamente -->
 </body>
 </html>
